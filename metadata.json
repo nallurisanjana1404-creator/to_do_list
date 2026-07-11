@@ -1,0 +1,8 @@
+{
+  "name": "Todo List with Calendar",
+  "description": "A todo list manager that integrates with Google Calendar for scheduling and automated task reminders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
