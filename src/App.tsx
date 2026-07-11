@@ -113,10 +113,12 @@ export default function App() {
         });
         showNotification('success', 'Successfully signed in with Google Calendar!');
         fetchCalendarEvents(res.accessToken);
+      } else {
+        showNotification('success', 'Redirecting to Google for sign-in...');
       }
     } catch (err: any) {
       console.error(err);
-      showNotification('error', 'Google Calendar sign-in was aborted.');
+      showNotification('error', 'Google Calendar sign-in could not be completed.');
     }
   };
 
